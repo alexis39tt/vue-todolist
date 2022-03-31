@@ -60,6 +60,11 @@ new Vue(
                     this.imgs[this.counter-2].imgshown = false;
                     this.imgs[this.counter-1].imgshown = true;
                 }
+            },
+            timeint: function onMounted(){
+                setInterval(() =>{
+                    this.nextimg()
+                }, 5000);
             }
         }
     });

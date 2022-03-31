@@ -13,16 +13,13 @@
 <body>
     <div id="root">
         <div id="container">
-            <div class="arrow" @click="previmg()">
+            <div class="arrow" @click="previmg">
                 <i class="fa-solid fa-chevron-left"></i>
             </div>
             <div class="image">
-                <img v-for="elm in imgs" :src="elm.url" v-if="elm.imgshown">
-                <div class="slider">
-                    <div v-for="elm in imgs" class="dot"></div>
-                </div>
+                <img v-for="elm in imgs" :src="elm.url" v-if="elm.imgshown" v-bind="timeint()">
             </div>
-            <div class="arrow" @click="nextimg()">
+            <div class="arrow" @click="nextimg">
                 <i class="fa-solid fa-chevron-right"></i>
             </div>
         </div>
