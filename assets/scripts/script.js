@@ -31,6 +31,12 @@ var app = new Vue(
             },
             tododone: function(i){
                 (this.todo[i].done == true) ? this.todo[i].done = false : this.todo[i].done = true
+            },
+            addnewtodo: function(newtodo){
+                this.todo.push({
+                    text: newtodo,
+                    done: false
+                })
             }
     }
 })

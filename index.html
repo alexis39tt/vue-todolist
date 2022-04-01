@@ -20,16 +20,19 @@
         <h1>To-Do List</h1>
         <div id="container">
             <div class="addtodo">
-                <input type="text" name="addtodo" placeholder="Add a to-do">
-                <button>Aggiungi</button>
+                <input type="text" name="addtodo" placeholder="Add a to-do" v-model="newtodo" autofocus>
+                <button @click="addnewtodo(newtodo)">AGGIUNGI</button>
             </div>
-            <div class="todo" v-for="text, i in todo" @click="tododone(i)">
-                <p :class="(text.done == true) ? 'done' : ''">{{ todo[i].text }}</p><i class="fa-solid fa-trash-can" @click="deletetodo(i)"></i>
+            <div id="todos">
+                <div class="todo" v-for="text, i in todo" @click="tododone(i)">
+                    <p :class="(text.done == true) ? 'done' : ''">{{ todo[i].text }}</p><i class="fa-solid fa-trash-can"
+                        @click="deletetodo(i)"></i>
+                </div>
+            </div>
             </div>
         </div>
-    </div>
-    <script defer src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script defer src="./assets/scripts/script.js" rel="text/javascript"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script defer src="./assets/scripts/script.js" rel="text/javascript"></script>
 </body>
 
 </html>
