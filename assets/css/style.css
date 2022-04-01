@@ -5,62 +5,67 @@
 }
 
 html{
-    color: gray;
-    font-size: 64px;
+    color: white;
+    font-size: 28px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body{
     background: rgb(24, 24, 24);
 }
 
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 30px;
+}
+
 #container{
-    margin: 10vh auto;
-    max-width: 80%;
-    height: 80%;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.addtodo input{
+    width: 100%;
+    background: rgb(77, 77, 77);
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 38px;
+    margin: 0 0 50px;
+    padding: 10px 15px;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+.todo{
+    width: 100%;
+    background: rgb(77, 77, 77);
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 10px 0px 10px 15px;
+    color: black;
     display: flex;
     justify-content: space-between;
-}
-
-.arrow{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     cursor: pointer;
 }
-.arrow i{
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: 0.2s;
+
+.todo:hover i{
+    display: block;
 }
 
-.arrow:hover i{
-    background: rgb(36, 36, 36);
+.todo i{
+    display: none;
+    margin-top: 5px;
+    padding: 0px 15px;
 }
 
-.image{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    user-select: none;
-}   
-
-.image img{
-    width: 100%;
-    border-radius: 15px;
+.todo i:hover{
+    color: rgb(173, 0, 0);
 }
 
-.slider{
-    align-self: center;
-    margin-top: -30px;
-    display: flex;
-}
-
-.dot{
-    width: 20px;
-    height: 20px;
-    background-color: gray;
-    clip-path: circle();
-    margin: 0 5px;
-    cursor: pointer;
+.done{
+    color: rgb(32, 32, 32);
+    text-decoration: line-through;
 }
