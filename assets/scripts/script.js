@@ -16,11 +16,11 @@ var app = new Vue(
                     done: false
                 },
                 {
-                    text: 'Dare un passaggio a una tredicenne di Brembate',
+                    text: 'Pagare le bollette',
                     done: false
                 },
                 {
-                    text: 'Pilotare una nave da crociera vicino all\'isola del Giglio',
+                    text: 'Imparare una nuova lingua',
                     done: false
                 },
             ]

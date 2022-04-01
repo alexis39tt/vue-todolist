@@ -10,6 +10,10 @@ html{
     font-family: 'Noto Sans', sans-serif;
 }
 
+::selection{
+    background-color: orange;
+}
+
 body{
     background: rgb(24, 24, 24);
 }
@@ -24,6 +28,26 @@ h1{
     width: 60%;
     margin: 0 auto;
     padding: 20px;
+}
+
+.addtodo button{
+    display: none;
+    position: absolute;
+    margin-left: -128px;
+    background: rgb(49, 49, 49);
+    border-radius: 8px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    line-height: 38px;
+    padding: 10px 15px;
+    color: black;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.addtodo:hover button{
+    display: inline-block;
 }
 
 .addtodo input{
