@@ -93,3 +93,19 @@ h1{
     color: rgb(32, 32, 32);
     text-decoration: line-through;
 }
+
+#error{
+    position: absolute;
+    font-size: 0.7rem;
+    margin-top: -45px;
+    margin-left: 10px;
+    color: rgb(173, 0, 0);
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
