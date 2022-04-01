@@ -20,7 +20,8 @@
         <h1>To-Do List</h1>
         <div id="container">
             <div class="addtodo">
-                <input type="text" name="addtodo" placeholder="Add a to-do" v-model="newtodo" @keyup.enter="addnewtodo(newtodo)" autofocus>
+                <input type="text" name="addtodo" placeholder="Add a to-do" v-model="newtodo"
+                    @keyup.enter="addnewtodo(newtodo)" autofocus>
                 <button @click="addnewtodo(newtodo)">AGGIUNGI</button>
                 <p id="error" :class="(copia == true || empty == true) ? 'show' : 'hide'">{{ errors[errorindex] }}</p>
             </div>
@@ -30,10 +31,10 @@
                         @click="deletetodo(i)"></i>
                 </div>
             </div>
-            </div>
         </div>
-        <script defer src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-        <script defer src="./assets/scripts/script.js" rel="text/javascript"></script>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer src="./assets/scripts/script.js" rel="text/javascript"></script>
 </body>
 
 </html>

@@ -1,36 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     color: white;
     font-size: 28px;
     font-family: 'Noto Sans', sans-serif;
 }
 
-::selection{
+::selection {
     background-color: orange;
 }
 
-body{
+body {
     background: rgb(24, 24, 24);
 }
 
-h1{
+h1 {
     font-size: 3rem;
     text-align: center;
     margin: 30px;
 }
 
-#container{
+#container {
     width: 60%;
     margin: 0 auto;
     padding: 20px;
 }
 
-.addtodo button{
+.addtodo button {
     display: none;
     position: absolute;
     margin-left: -134px;
@@ -46,11 +46,11 @@ h1{
     cursor: pointer;
 }
 
-.addtodo:hover button{
+.addtodo:hover button {
     display: inline-block;
 }
 
-.addtodo input{
+.addtodo input {
     width: 100%;
     background: rgb(77, 77, 77);
     border-radius: 8px;
@@ -63,7 +63,7 @@ h1{
     border: none;
 }
 
-.todo{
+.todo {
     width: 100%;
     background: rgb(77, 77, 77);
     border-radius: 8px;
@@ -75,26 +75,26 @@ h1{
     cursor: pointer;
 }
 
-.todo:hover i{
+.todo:hover i {
     display: block;
 }
 
-.todo i{
+.todo i {
     display: none;
     margin-top: 5px;
     padding: 0px 15px;
 }
 
-.todo i:hover{
+.todo i:hover {
     color: rgb(173, 0, 0);
 }
 
-.done{
+.done {
     color: rgb(32, 32, 32);
     text-decoration: line-through;
 }
 
-#error{
+#error {
     position: absolute;
     font-size: 0.7rem;
     margin-top: -45px;
@@ -102,10 +102,10 @@ h1{
     color: rgb(173, 0, 0);
 }
 
-.show{
+.show {
     display: block;
 }
 
-.hide{
+.hide {
     display: none;
 }

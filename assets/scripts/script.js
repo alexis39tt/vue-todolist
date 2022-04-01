@@ -35,7 +35,7 @@ var app = new Vue(
         methods: {
             deletetodo: function (i) {
                 document.getElementsByClassName("todo")[i].style.display = "none";
-                this.todo.splice(i,0);
+                this.todo.splice(i, 0);
             },
             tododone: function (i) {
                 (this.todo[i].done == true) ? this.todo[i].done = false : this.todo[i].done = true
@@ -49,11 +49,11 @@ var app = new Vue(
                         this.errorindex = 0;
                     }
                 }
-                if(newtodo == null || newtodo == "" || newtodo == " "){
+                if (newtodo == null || newtodo == "" || newtodo == " ") {
                     this.empty = true;
                     this.errorindex = 1;
                 }
-                else if (this.copia == false){
+                else if (this.copia == false) {
                     this.todo.push({
                         text: newtodo,
                         done: false
